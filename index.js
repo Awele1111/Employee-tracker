@@ -86,20 +86,20 @@ const init = () => {
     }
 
     function addDepartment () {
-        connection.query('select * from employees;', (err, data) => {
+        connection.query('select * from department;', (err, data) => {
             if (err) console.log(err);
             console.table(data)
             init()
         })  
     }
     function addRole () {
-        connection.query('select * from employees;', (err, data) => {
+        connection.query('select * from roles;', (err, data) => {
             if (err) console.log(err);
             console.table(data)
             init()
         })  
     }
-    function updateEmployeeRole () {
+    function updateEmployee () {
         connection.query('select * from employees;', (err, data) => {
             if (err) console.log(err);
             console.table(data)
